@@ -1,0 +1,362 @@
+/* Sidebar container background with gradient */
+#sidebar-v2 {
+  background: linear-gradient(
+    to bottom,
+    #000000 2%,
+    #622294 25%,
+    #513eb1
+  ) !important;
+  border-right: 1px solid #4b1877 !important;
+}
+
+/* Sidebar inner elements */
+#sidebar-v2 .lead-connector,
+#sidebar-v2 nav,
+#sidebar-v2 .hl_nav-header,
+#sidebar-v2 .hl_nav-settings {
+  background-color: transparent !important;
+}
+
+/* Make only sidebar menu icons white */
+#sidebar-v2 a.group img {
+  filter: brightness(0) invert(1) !important;
+  opacity: 0.95 !important;
+}
+/* === ============================== === */
+
+/* === SIDEBAR ICONS === */
+
+/* Target all FA icons inside sidebar */
+#sidebar-v2 i.nav-fa-icon,
+#sidebar-v2 i.sm-button,
+#sidebar-v2 i[class*="fa-"] {
+  color: #ffffff !important;
+  opacity: 0.95 !important;
+}
+
+/* On hover or active state */
+#sidebar-v2 a.group:hover i.nav-fa-icon,
+#sidebar-v2 a.group.active i.nav-fa-icon,
+#sidebar-v2 a.group.exact-active i.nav-fa-icon {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+/* === ============================== === */
+
+/* === LOCATION LIST SCROLLBAR === */
+
+/* Scrollbar container */
+#location-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Scrollbar track */
+#location-list::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.25); /* dark transparent background */
+  border-radius: 10px;
+}
+
+/* Scrollbar thumb */
+#location-list::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #a562c2, #622294); /* purple gradient thumb */
+  border-radius: 10px;
+}
+
+/* Thumb hover effect */
+#location-list::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #b883db, #7b35b2);
+}
+
+/* === ============================== === */
+
+/* SIDEBAR */
+/* Brighten on hover or active */
+#sidebar-v2 a.group:hover img,
+#sidebar-v2 a.group.active img,
+#sidebar-v2 a.group.exact-active img {
+  filter: brightness(0) invert(1) saturate(1.2) !important;
+  opacity: 1 !important;
+}
+
+/* Sidebar scroll area and container styling */
+#sidebar-v2 .flex-grow {
+  background: linear-gradient(
+    to bottom,
+    #00000052 2%,
+    #622294 25%,
+    #513eb1
+  ) !important;
+}
+
+/* Menu items: default state */
+#sidebar-v2 a.group {
+  color: #ffffff !important;
+  opacity: 0.9 !important;
+}
+
+/* Menu items: hover */
+#sidebar-v2 a.group:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Active menu item */
+#sidebar-v2 a.group.active,
+#sidebar-v2 a.group.exact-active {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Menu icons */
+#sidebar-v2 a.group img {
+  filter: brightness(0) invert(1); /* turn icons white */
+  opacity: 0.95;
+}
+
+/* Search bar and quick actions */
+#sidebar-v2 #globalSearchOpener,
+#sidebar-v2 #quickActions {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border-radius: 6px;
+}
+
+/* Texts and labels inside sidebar */
+#sidebar-v2 span,
+#sidebar-v2 p,
+#sidebar-v2 .hl_text-overflow {
+  color: #ffffff !important;
+}
+
+/* Divider line */
+#sidebar-v2 .divider p {
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Collapse button */
+#sidebar-v2 .hl_collapse-button {
+  color: #ffffff !important;
+  background-color: #8136b4 !important;
+  border-radius: 50%;
+}
+
+/* Smooth hover transitions */
+#sidebar-v2 a.group {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+/* === ============================== === */
+
+/* === LOCATION SWITCHER PURPLE GRADIENT THEME === */
+
+/* Entire switcher container */
+.hl_v2-location_switcher {
+  background: linear-gradient(to bottom, #000000 2%, #622294 25%, #513eb1) !important;
+  margin-left: 8px !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+/* Search input box */
+.hl_v2-location_switcher input[type="search"] {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 6px !important;
+}
+
+.hl_v2-location_switcher input[type="search"]::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Search icon */
+.hl_v2-location_switcher svg.h-5.w-5.text-gray-400 {
+  color: rgba(255, 255, 255, 0.8) !important;
+  opacity: 0.9 !important;
+}
+
+/* Section headers (e.g., RECENT, ALL ACCOUNTS) */
+.hl_v2-location_switcher .hl_swicher-heading {
+  color: #e2d3ff !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+/* Location names */
+.hl_v2-location_switcher .hl_location-title,
+.hl_v2-location_switcher .hl_location-recent {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+}
+
+/* Location address text */
+.hl_v2-location_switcher .hl_text-overflow {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Circle initials (gray K icons → lighter purple) */
+.hl_v2-location_switcher .bg-gray-200 {
+  background-color: #8136b4 !important;
+  color: #ffffff !important;
+}
+
+/* "Switch to Agency View" text & button */
+#switcher-agency-switch {
+  color: #e2d3ff !important;
+}
+
+#switcher-agency-switch svg rect {
+  fill: #7b35b2 !important;
+}
+
+#switcher-agency-switch svg path {
+  stroke: #ffffff !important;
+}
+
+/* Active account highlight */
+.hl_v2-location_switcher .hl_account.active {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border-radius: 6px !important;
+  backdrop-filter: blur(4px);
+}
+
+/* Hover effect on accounts */
+.hl_v2-location_switcher .hl_account:hover {
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  transition: background-color 0.25s ease;
+}
+
+/* Pin icons (visible on dark background) */
+.hl_v2-location_switcher .hl_pinned-fade path {
+  fill: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Divider line */
+.hl_v2-location_switcher .divider {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Sidebar top location switcher button */
+#location-switcher-sidbar-v2 {
+  background: linear-gradient(to right, #622294, #513eb1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 8px !important;
+  color: #ffffff !important;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#location-switcher-sidbar-v2 .hl_switcher-loc-name {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+}
+
+/* SVG logo background + stroke color */
+#location-switcher-sidbar-v2 svg.hl_location_icon rect {
+  fill: rgba(255, 255, 255, 0.15) !important;
+}
+
+#location-switcher-sidbar-v2 svg.hl_location_icon path {
+  stroke: #000000 !important;
+}
+
+/* Caret icons (up/down) */
+#location-switcher-sidbar-v2 .switcher-caret-holder i {
+  color: rgba(255, 255, 255, 0.9) !important;
+  transition: color 0.2s ease;
+}
+
+/* === ============================== === */
+
+/* === GO BACK BUTTON FIX === */
+#backButtonv2 {
+  background: linear-gradient(to right, #622294, #513eb1);
+  color: #ffffff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 6px;
+  width: 90%;
+  margin: 10px auto;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Icon color */
+#backButtonv2 i {
+  color: #ffffff !important;
+  font-size: 14px;
+}
+
+/* Text */
+#backButtonv2 span {
+  color: #ffffff !important;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+
+/* Hover effect */
+#backButtonv2:hover {
+  background: linear-gradient(to right, #7b35b2, #8f5cd6);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* === ============================== === */
+
+/* === SIDEBAR MENU TITLE FIX === */
+.menu-title {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.3px;
+}
+
+/* Optional: subtle glow or shadow for readability */
+.menu-title {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* === Purple Theme for Edit Dashboard Button Only === */
+#location-dashboard_btn--edit-dashboard {
+  background-color: #513eb1 !important;
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  transition: background-color 0.25s ease, transform 0.1s ease !important;
+}
+
+/* Hover */
+#location-dashboard_btn--edit-dashboard:hover {
+  background-color: #3f2f8d !important;
+  border-color: #3f2f8d !important;
+  transform: translateY(-1px);
+}
+
+/* Active / Pressed */
+#location-dashboard_btn--edit-dashboard:active {
+  background-color: #37287c !important;
+  transform: translateY(0);
+}
+
+/* Disabled */
+#location-dashboard_btn--edit-dashboard:disabled,
+#location-dashboard_btn--edit-dashboard[disabled] {
+  background-color: #7d6ed9 !important;
+  opacity: 0.7 !important;
+  cursor: not-allowed !important;
+}
+
+/* Force inner icon to be white */
+#location-dashboard_btn--edit-dashboard svg {
+  stroke: #ffffff !important;
+}
+/* === ============================== === */
+
+/* SIDEBAR LOGO */
+.agency-logo {
+  max-width: 100% !important;   /* allows it to grow more */
+  height: 70px !important;      /* increase height */
+  object-fit: contain !important;
+}
+/* === ============================== === */
