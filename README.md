@@ -30,6 +30,50 @@
 
 ## Dashboard
 
-* `#location-dashboard_btn--edit-dashboard` , `#location-dashboard_btn--edit-dashboard svg`: edit dashboard button on dashboard page
+`#location-dashboard_btn--edit-dashboard` , `#location-dashboard_btn--edit-dashboard svg`: edit dashboard button on dashboard page
 
+## Conversations
 
+### Mini Navigation Panel (Right Side Icon Bar)
+`.mini-panel` : main mini-panel container
+* `.mini-panel > div[class*="cursor-pointer"]` : all mini-panel action buttons
+* `.mini-panel > div[class*="cursor-pointer"] svg` : icons inside mini-panel buttons
+* `.mini-panel hr` : divider line inside mini-panel
+
+### Notes in Mini Panel
+`.new-crp--notes` : main notes container background
+* `.new-crp--notes button` : primary “Add Note” button styling
+* `.p-[8px].pr-[6px].text-gray-600.cursor-pointer.group` : individual note card container
+* `.p-[8px].pr-[6px].text-gray-600 > .flex.items-center.justify-between` : note header container (Created by, date)
+* `.p-[8px].pr-[6px].text-gray-600 > .flex.items-center.justify-between span` : note header labels (uppercase metadata)
+* `div[class*="rich-text-container"]` : call summary wrapper 
+* `div[class*="rich-text-content"]` : actual call summary text block
+* `.text-xs.leading-[18px].text-gray-600.flex.items-center.h-6` : date/footer area under each note
+
+### Header
+`#central-panel-header` : main conversation header container (background, border, shadow)
+`.conversation-header-text` : contact name title 
+* `.message-header-actions .button-group button` : header button group
+* `.message-header-actions .button-group button:hover svg path` : header icons
+* `.message-header-actions .button-group button:first-child` : left-rounded button
+* `.message-header-actions .button-group button:last-child` : right-rounded button
+* `#activityDropdownMenuButton` : main activity dropdown trigger button
+* `.activityDropdownMenu` : dropdown menu container
+* `.activityDropdownMenu .dropdown-item` : individual dropdown item
+* `.activityFilterCheckbox` : checkboxes inside dropdown
+
+### Conversation List (Left Sidebar) 
+`.messages-list--item-v2` : main conversation list item container
+* `.message-list--avatar.avatar` : avatar + checkbox wrapper
+* `#allCheckbox` : master checkbox 
+* `.avatar[data-v-011e3426]` : avatar container
+* .`avatar_img[data-v-011e3426]` : circular avatar initial
+* `.avatar[data-v-011e3426] .icon.icon-v2` : small status badge inside avatar
+* `.avatar[data-v-011e3426] .icon.icon-v2 div` : inner wrapper for badge
+* `.time-date` : purple time/date badge
+* `.messages-list--item-v2 .badge` : unread message count badge
+* `.flex.content-center.truncate p` : preview message text
+* `.messages-list--item-v2 > div[style*="grid-template-columns"]` : main grid 
+* `.messages-list--item-v2 > div > div > div[style*="grid-template-rows"]` : row spacing inside preview text column
+* `[class*="tab"].active,[class*="tab"][aria-selected="true"]` : currently active tab
+* `.messages-list--item-v2.active, .messages-list--item-v2[aria-selected="true"], .messages-list--item-v2.selected` : currently active conversation
