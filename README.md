@@ -77,3 +77,6 @@
 * `.messages-list--item-v2 > div > div > div[style*="grid-template-rows"]` : row spacing inside preview text column
 * `[class*="tab"].active,[class*="tab"][aria-selected="true"]` : currently active tab
 * `.messages-list--item-v2.active, .messages-list--item-v2[aria-selected="true"], .messages-list--item-v2.selected` : currently active conversation
+* `.conversations-list::-webkit-scrollbar` : main vertical scrollbar container for conversation list
+* `.conversations-list::-webkit-scrollbar-track` : scrollbar track (background area behind the thumb)
+* `.conversations-list::-webkit-scrollbar-thumb` : draggable scrollbar thumb (default state)
