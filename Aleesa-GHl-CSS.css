@@ -360,3 +360,584 @@
   object-fit: contain !important;
 }
 /* === ============================== === */
+
+
+.mini-panel {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Main panel - purplish background with prominence */
+.mini-panel {
+  background: linear-gradient(to bottom, #581c87, #312e81) !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* All panel buttons - default state with white icons */
+.mini-panel > div[class*="cursor-pointer"] {
+  color: #ffffff !important;
+  transition: all 0.2s ease;
+  background-color: transparent !important;
+  opacity: 0.7;
+}
+
+/* All SVG icons - force white color */
+.mini-panel > div[class*="cursor-pointer"] svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* Hover state for buttons */
+.mini-panel > div[class*="cursor-pointer"]:hover {
+  background-color: rgba(109, 40, 217, 0.5) !important;
+  opacity: 1;
+}
+
+/* Selected/Active button - white background with purple icon */
+.mini-panel > div[class*="cursor-pointer"].active,
+.mini-panel > div[class*="text-primary-600"] {
+  color: #6b21a8 !important;
+  background-color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Selected button SVG - purple color */
+.mini-panel > div[class*="cursor-pointer"].active svg,
+.mini-panel > div[class*="text-primary-600"] svg {
+  color: #6b21a8 !important;
+  stroke: #6b21a8 !important;
+}
+
+/* Horizontal rule styling */
+.mini-panel hr {
+  border-color: #6b21a8 !important;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+/* Notes container - better spacing */
+.new-crp--notes {
+  background-color: #fafafa !important;
+}
+
+/* Add Note button - more prominent with purple */
+.new-crp--notes button {
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 12px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.2) !important;
+}
+
+.new-crp--notes button:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3) !important;
+}
+
+/* Each note card - modern card design */
+.p-\[8px\].pr-\[6px\].text-gray-600.cursor-pointer.group {
+  margin: 12px 16px !important;
+  padding: 16px !important;
+  background: white !important;
+  border-radius: 12px !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.2s ease !important;
+}
+
+.p-\[8px\].pr-\[6px\].text-gray-600.cursor-pointer.group:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  border-color: #d1d5db !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Header - Created by System */
+.p-\[8px\].pr-\[6px\].text-gray-600 > .flex.items-center.justify-between {
+  margin-bottom: 12px !important;
+  padding-bottom: 10px !important;
+  border-bottom: 2px solid #f3f4f6 !important;
+}
+
+.p-\[8px\].pr-\[6px\].text-gray-600 > .flex.items-center.justify-between span {
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  color: #6b7280 !important;
+}
+
+.p-\[8px\].pr-\[6px\].text-gray-600 > .flex.items-center.justify-between .font-semibold {
+  color: #7c3aed !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+/* Call summary container with purple accent */
+div[class*="rich-text-container"] {
+  padding: 16px !important;
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%) !important;
+  border-radius: 8px !important;
+  border-left: 4px solid #7c3aed !important;
+  margin-top: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+/* Call summary content - bigger text */
+div[class*="rich-text-content"] {
+  max-height: none !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  color: #374151 !important;
+  white-space: pre-wrap !important;
+  overflow: visible !important;
+  display: block !important;
+}
+
+/* Make the dashed lines less prominent */
+div[class*="rich-text-content"]::first-line {
+  font-size: 12px !important;
+  color: #9ca3af !important;
+  font-weight: 500 !important;
+}
+
+/* Remove "Read more" button */
+div[class*="rich-text-container"] span[class*="text-primary-600"] {
+  display: none !important;
+}
+
+/* Date footer - more prominent with purple */
+.text-xs.leading-\[18px\].text-gray-600.flex.items-center.h-6 {
+  margin-top: 12px !important;
+  padding-top: 12px !important;
+  border-top: 1px solid #e5e7eb !important;
+  font-size: 14px !important;
+  color: #6b7280 !important;
+}
+
+.text-xs.leading-\[18px\].text-gray-600.flex.items-center.h-6 .font-semibold {
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+}
+
+/* Delete icon - better styling */
+.text-error-600.hover\:bg-error-100 {
+  transition: all 0.2s ease !important;
+}
+
+.text-error-600.hover\:bg-error-100:hover {
+  background-color: #fee2e2 !important;
+  transform: scale(1.1) !important;
+}
+
+/* Divider between notes */
+.divide-y.divide-gray-200 > div {
+  border-bottom: none !important;
+}
+
+/* Add subtle animation on load */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.p-\[8px\].pr-\[6px\].text-gray-600.cursor-pointer.group {
+  animation: slideIn 0.3s ease !important;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+/* Header container - add subtle shadow */
+#central-panel-header {
+  background: white !important;
+  border-bottom: 2px solid #f3f4f6 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+  padding: 16px 20px !important;
+}
+
+/* Contact name - make it more prominent with purple accent */
+.conversation-header-text {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #111827 !important;
+  letter-spacing: -0.5px !important;
+  background: linear-gradient(135deg, #111827 0%, #7c3aed 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+/* Button group styling with purple accents */
+.message-header-actions .button-group button {
+  background: white !important;
+  border: 1.5px solid #e5e7eb !important;
+  transition: all 0.2s ease !important;
+  padding: 8px 12px !important;
+}
+
+.message-header-actions .button-group button:hover {
+  border-color: #7c3aed !important;
+  background: #f9fafb !important;
+  transform: translateY(-1px) !important;
+}
+
+.message-header-actions .button-group button:hover svg path {
+  stroke: #7c3aed !important;
+}
+
+/* First button - rounded left */
+.message-header-actions .button-group button:first-child {
+  border-radius: 8px 0 0 8px !important;
+}
+
+/* Last button - rounded right */
+.message-header-actions .button-group button:last-child {
+  border-radius: 0 8px 8px 0 !important;
+}
+
+/* Activity dropdown button */
+#activityDropdownMenuButton {
+  background: white !important;
+  border: 1.5px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+  transition: all 0.2s ease !important;
+  margin-left: 8px !important;
+}
+
+#activityDropdownMenuButton:hover {
+  border-color: #7c3aed !important;
+  background: #f9fafb !important;
+  transform: translateY(-1px) !important;
+}
+
+#activityDropdownMenuButton:hover svg path {
+  stroke: #7c3aed !important;
+}
+
+/* Dropdown menu styling */
+.activityDropdownMenu {
+  border-radius: 12px !important;
+  border: 1.5px solid #e5e7eb !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+  padding: 8px !important;
+}
+
+/* Dropdown items */
+.activityDropdownMenu .dropdown-item {
+  border-radius: 6px !important;
+  padding: 10px 12px !important;
+  transition: all 0.2s ease !important;
+  margin: 4px 0 !important;
+}
+
+.activityDropdownMenu .dropdown-item:hover {
+  background: linear-gradient(135deg, #f3f4f6 0%, #ede9fe 100%) !important;
+}
+
+/* Checkboxes in dropdown */
+.activityFilterCheckbox {
+  accent-color: #7c3aed !important;
+  width: 18px !important;
+  height: 18px !important;
+  cursor: pointer !important;
+}
+
+/* Button icons - better spacing */
+.message-header-actions svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* Add spacing between button groups */
+.message-header-actions .flex {
+  gap: 8px !important;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+/* ===================================
+   IMPROVED CONVERSATION CONTACT BLOCK
+   Purple Branding & Enhanced Styling
+   Fixed icon positioning - hide duplicate icons
+   =================================== */
+
+/* ========================================
+   CONVERSATION LIST ITEMS (LEFT SIDEBAR)
+   ======================================== */
+
+/* Main Container */
+.messages-list--item-v2 {
+    background: white;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 8px;
+    border: 1px solid #e5e7eb;
+    transition: all 0.2s ease;
+}
+
+.messages-list--item-v2:hover {
+    background: #faf9fc;
+    border-color: #9333ea;
+    box-shadow: 0 2px 8px rgba(147, 51, 234, 0.1);
+    transform: translateY(-1px);
+}
+
+/* Avatar Section */
+.message-list--avatar.avatar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 12px;
+    position: relative;
+}
+
+/* Checkbox Styling */
+#allCheckbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 2px solid #d1d5db;
+    cursor: pointer;
+    visibility: visible !important;
+    accent-color: #9333ea;
+}
+
+#allCheckbox:hover {
+    border-color: #9333ea;
+}
+
+/* Avatar Container */
+.avatar[data-v-011e3426] {
+    position: relative;
+}
+
+/* Avatar Circle */
+.avatar_img[data-v-011e3426] {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+/* Icon Badge - ONLY inside avatar container */
+.avatar[data-v-011e3426] .icon.icon-v2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.avatar[data-v-011e3426] .icon.icon-v2 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar[data-v-011e3426] .icon.icon-v2 svg {
+    width: 12px;
+    height: 12px;
+}
+
+/* Purple theme for the icon stroke */
+.avatar[data-v-011e3426] .icon.icon-v2 svg path {
+    stroke: #9333ea;
+}
+
+/* Hide icons that are NOT inside avatar container */
+.messages-list--item-v2 > div > div:not(.avatar) .icon.icon-v2 {
+    display: none !important;
+}
+
+/* Hide call/message icons in preview text */
+.flex.content-center .icon,
+.flex.content-center svg[width="14"],
+.truncate .icon {
+    display: none !important;
+}
+
+/* Text Container */
+.messages-list--item-v2 > div > div:last-child {
+    margin-left: 0 !important;
+}
+
+/* Contact Name */
+.truncate p {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #1f2937 !important;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+/* Time Badge - Purple Accent */
+.time-date {
+    font-size: 11px;
+    font-weight: 500;
+    color: #9333ea;
+    background: #f3e8ff;
+    padding: 4px 10px;
+    border-radius: 12px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+/* Message Preview Text */
+.flex.content-center.truncate p {
+    font-size: 13px !important;
+    color: #6b7280 !important;
+    font-weight: 400 !important;
+    line-height: 1.5;
+    margin: 0 !important;
+}
+
+/* Message Preview - Show "Call" or "Message" text with icon */
+.flex.content-center.truncate {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Style for Call/Message label */
+.flex.content-center.truncate::before {
+    font-size: 12px;
+    color: #9333ea;
+    font-weight: 500;
+}
+
+/* If there's a "Call" text indicator */
+.flex.content-center.truncate:has([class*="call"])::before {
+    content: "📞";
+    margin-right: 4px;
+}
+
+/* Unread Count Badge - Purple */
+.messages-list--item-v2 .badge,
+.messages-list--item-v2 [style*="background-color: rgb"] {
+    background: #9333ea !important;
+    color: white !important;
+    border-radius: 50%;
+    min-width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Grid Layout */
+.messages-list--item-v2 > div[style*="grid-template-columns"] {
+    gap: 12px;
+    align-items: center;
+}
+
+.messages-list--item-v2 > div > div > div[style*="grid-template-rows"] {
+    gap: 6px;
+}
+
+/* Remove negative margin */
+.messages-list--item-v2 > div > div[style*="cursor: pointer"] > div[style*="margin-left: -10px"] {
+    margin-left: 0 !important;
+}
+
+/* ========================================
+   TABS AND FILTERS - Purple Theme
+   ======================================== */
+
+/* Active tab */
+[class*="tab"].active,
+[class*="tab"][aria-selected="true"] {
+    color: #9333ea !important;
+    border-bottom: 2px solid #9333ea !important;
+}
+
+/* Search input focus */
+input[type="text"]:focus,
+input[type="search"]:focus {
+    border-color: #9333ea;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(147, 51, 234, 0.1);
+}
+
+/* Active/Selected conversation */
+.messages-list--item-v2.active,
+.messages-list--item-v2[aria-selected="true"],
+.messages-list--item-v2.selected {
+    background: #faf5ff;
+    border-color: #9333ea;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+    .messages-list--item-v2 {
+        padding: 12px;
+    }
+    
+    .avatar_img[data-v-011e3426] {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+    
+    .avatar[data-v-011e3426] .icon.icon-v2 {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .avatar[data-v-011e3426] .icon.icon-v2 svg {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* ========================================
+   SCROLLBAR STYLING
+   ======================================== */
+
+.conversations-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.conversations-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.conversations-list::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 3px;
+}
+
+.conversations-list::-webkit-scrollbar-thumb:hover {
+    background: #9333ea;
+}
