@@ -28,6 +28,18 @@
 * `.hl_pinned-fade` : pin icons
 * `#location-list` : scrollable list of locations
 
+## Header (All Screens)
+`h1_header` : main header container
+* `.hl_header--avatar .avatar_img, .user-info-card .avatar_img` : profile dropdown avatar
+* `.hl_header--dropdown .dropdown-item` : dropdown menu items
+* `#recent_activities-toggle` : notifications button
+* `#recent_activities-toggle i` : icon inside notifications button
+* `#canny_logs-toggle` : changelog button
+* `#canny_logs-toggle i` : icon inside changelog button
+* `#hl_header--copilot-icon` : AI button
+* `#hl_header--copilot-icon svg circle` : inner circle of AI button
+* `#hl_header--copilot-icon svg path` : icon inside AI button
+
 ## Dashboard
 
 `#location-dashboard_btn--edit-dashboard` , `#location-dashboard_btn--edit-dashboard svg`: edit dashboard button on dashboard page
