@@ -918,3 +918,53 @@ input[type="search"]:focus {
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
+
+/* Purple avatar circle */
+.hl_header--avatar .avatar_img,
+.user-info-card .avatar_img {
+  background-color: #622294 !important;
+  color: #ffffff !important;
+}
+
+/* For the dropdown items (from previous step) */
+.hl_header--dropdown .dropdown-item {
+  color: #513eb1 !important;
+}
+
+/* Purple notifications button */
+#recent_activities-toggle {
+  background-color: #622294 !important;
+  color: #ffffff !important;
+  border-radius: 50% !important;
+}
+
+/* White bell icon so it doesn’t clash */
+#recent_activities-toggle i {
+  color: #ffffff !important;
+}
+
+/* Purple changelog button */
+#canny_logs-toggle {
+  background-color: #622294 !important;
+  color: #ffffff !important;
+  border-radius: 50% !important;
+}
+
+/* White bullhorn icon */
+#canny_logs-toggle i {
+  color: #ffffff !important;
+}
+
+/* Copilot AI button */
+#hl_header--copilot-icon {
+  background-color: #622294 !important; /* Purple background */
+}
+
+
+#hl_header--copilot-icon svg circle {
+  fill: #622294 !important; /* make the inner circle match button */
+}
+
+#hl_header--copilot-icon svg path {
+  stroke: #ffffff !important; /* make all paths white */
+}
