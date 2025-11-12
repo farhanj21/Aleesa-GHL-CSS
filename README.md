@@ -15,6 +15,23 @@
 *  `svg.hl_location_icon rect` , `svg.hl_location_icon path` : icons in switcher menu
 *  `.switcher-caret-holder i` : caret icons on switcher
 
+### Sidebar Renaming of Items
+* `#sb_##### .nav-title` : original label
+* `#sb_##### .nav-title::after` : new label
+* `#sb_##### img` : hide original icon
+* `#sb_#####::before` : new icon
+* `#sb_conversations` : Messages / Conversations
+* `#sb_launchpad` : Setup / Launchpad
+* `#sb_contacts` : Contacts
+* `#sb_calendars` : Calendar
+* `#sb_opportunities` : Leads / Opportunities
+* `#sb_3G9KfCGEv7W13FmhIpdc\.custom_objects\.records` : Records
+* `#sb_payments` : Invoices / Payments
+* `#sb_email-marketing` : Marketing
+* `#sb_automation` : Leads / Automation
+* `#sb_app-media` : Media / Media Storage
+* `#sb_reporting` : Reports / Reporting
+* `#sb_app-marketplace` : Marketplace / App Marketplace
 
 ## Location Switcher (Dropdown)
 
